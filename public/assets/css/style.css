@@ -1898,7 +1898,7 @@ pre {
   {
       background:#fff !important;
     }
-    
+
   .btn-secondary, .btn-info
   {
     margin-top:5px;
@@ -9540,9 +9540,9 @@ a {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: #6CC51D;
+  width: 40px;
+  height: 40px;
+  background-color: #11233b;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
@@ -9585,7 +9585,7 @@ a {
       text-align: center;
       margin: 0; }
     .footer .copyright a {
-      color: #6CC51D; }
+      color: #6673fd; }
 
 [data-sidebar-style="mini"] .nav-control,
 [data-layout="horizontal"] .nav-control {
