@@ -1,0 +1,14 @@
+	</table>
+	<table class="tb-list" border=0 style="width:100%;font-weight:500;">
+	<tr >
+		<th colspan=5 style="text-align:right;border-top:1px solid #727272;border-bottom:1px solid #727272;">
+		Total : &nbsp;
+		</th>
+		<th  style="width:120px;text-align:right;border-top:1px solid #727272;border-bottom:1px solid #727272;">
+		<span style="width:200px;font-size:14px;text-align:right;">{{$data[0]['total_gst']??0}}</span>
+		</th>
+		<th  style="width:120px;text-align:right;border-top:1px solid #727272;border-bottom:1px solid #727272;">
+		<span style="width:200px;font-size:14px;text-align:right;">{{$data[0]['total_amount']??0}}</span>
+		</th>
+	</tr>
+	</table>
