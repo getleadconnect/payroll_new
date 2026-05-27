@@ -55,7 +55,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 	
 			<div class="row mt-1 pt-2 pb-2 filter-box">
 				
-				<label class="col-lg-2 col-xl-2 col-xxl-2 col-form-label">Select Category </label>
+				<label class="col-lg-2 col-xl-2 col-xxl-2 col-form-label text-right">Select Category </label>
 				<div class="col-lg-3 col-xl-3 col-xxl-3">
 				<select type="text" class="form-control" id="flt_category_id" name="flt_category_id" required>
 				<option value="">--select--</option>

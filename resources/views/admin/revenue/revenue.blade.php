@@ -52,8 +52,37 @@ table.dataTable thead th, table.dataTable tfoot th {
 			</div>
 			
 			<div class="card-body pb-4 pt-0" id="RecentActivitiesContent">
+
+			<div class="row mt-1 pt-2 pb-2 filter-box">
+				
+				<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label">Select Project </label>
+				<div class="col-lg-3 col-xl-3 col-xxl-3">
+				<select type="text" class="form-control" id="flt_project_id" name="flt_project_id" required>
+				<option value="">--select--</option>
+				@foreach($projs as $r)
+				    <option value="{{$r->id}}">{{$r->project_name}}</option>
+				@endforeach
+				</select>
+				</div>
+
+				<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label">Select Staff </label>
+				<div class="col-lg-3 col-xl-3 col-xxl-3">
+				<select type="text" class="form-control" id="flt_staff_id" name="flt_staff_id" required>
+				<option value="">--select--</option>
+				@foreach($staff as $r)
+				    <option value="{{$r->id}}">{{$r->name}}</option>
+				@endforeach
+				</select>
+				</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2">
+					<button type="button" id="btnFilter" class="btn btn-secondary btn-size">Get</button>&nbsp;&nbsp;
+					<button type="button" id="btnAll" class="btn btn-info btn-size">All</button>
+				</div>
+
+			</div>
+	
 				<!--<div class="d-flex py-3 border-bottom align-items-center"> -->
-			
+
 				<div class="row mt-3">
 				<div class="col-lg-12 col-xl-12 col-xxl-12">
 			
@@ -236,6 +265,12 @@ table.dataTable thead th, table.dataTable tfoot th {
 
 <script>
 
+$("#flt_project_id").select2();
+$("#flt_staff_id").select2();
+
+$("#project_id").select2();
+$("#staff_id").select2();
+
 $(document).ready(function()
 {
 	var mes=$('#view_message').val().split('#');
@@ -267,6 +302,8 @@ var table = $('#datatable').DataTable({
 			data: function (data) 
 		    {
                data.search = $('input[type="search"]').val();
+			   data.projectId = $('#flt_project_id').val();
+			   data.staffId = $('#flt_staff_id').val();
 		    },
           },
 		
@@ -298,6 +335,16 @@ var table = $('#datatable').DataTable({
 		}
 		
     });
+
+	$("#btnFilter").click(function(){
+		table.draw();
+	})
+
+	$("#btnAll").click(function()
+	{
+		location.reload();
+	})
+
 
 $("#project_id").change(function()
 {

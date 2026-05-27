@@ -53,7 +53,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 			<div class="card-body pb-4 pt-0" id="RecentActivitiesContent">
 			
 			<div class="row mt-2" style="background:#bfcedd;padding:3px 5px;">
-				<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label" >Staff</label>
+				<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label text-right" >Staff</label>
 				<div class="col-lg-4 col-xl-4 col-xxl-4">
 				<select class="form-control" name="flt_staff_id" id="flt_staff_id">
 				<option value="">--select--</option>

@@ -61,7 +61,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 				@csrf
 				
 				<div class="row pt-2 pb-2">
-				  	  <label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label" >Project</label>
+				  	  <label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label text-right" >Project</label>
 					  <div class="col-lg-3 col-xl-3 col-xxl-3">
 					     <select class="form-control input-default "  id="project_id" name="project_id" required>
 						 <option value="">--select--</option>
@@ -71,7 +71,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 						 </select>
 					  </div>
 					  
-					  <label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label" >Staff</label>
+					  <label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label text-right" >Staff</label>
 					  <div class="col-lg-3 col-xl-3 col-xxl-3">
 					     <select class="form-control input-default "  id="staff_id" name="staff_id" required>
 						 <option value="">--select--</option>
@@ -91,7 +91,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 				
 				 <label style="position:relative;z-index:999999;top:12px;"><b><u>Filter</u></b></label>
 					<div class="row  pt-2 pb-2 filter-box">
-						<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label" >Project</label>
+						<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label text-right" >Project</label>
 					  <div class="col-lg-3 col-xl-3 col-xxl-3">
 					     <select class="form-control input-default "  id="flt_project_id" name="flt_project_id" required>
 						 <option value="">--select--</option>

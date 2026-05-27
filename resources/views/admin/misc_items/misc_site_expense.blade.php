@@ -53,7 +53,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 			<div class="card-body pb-4 pt-0" id="RecentActivitiesContent">
 				<!--<div class="d-flex py-3 border-bottom align-items-center"> -->
 				<div class="row p-2 filter-box" >
-					<label class="col-lg-2 col-xl-2 col-xxl-2 col-form-label">Select Project</label>
+					<label class="col-lg-2 col-xl-2 col-xxl-2 col-form-label text-right">Select Project</label>
 					<div class="col-lg-3 col-xl-3 col-xxl-3">
 					 <select class="form-control input-default " id="flt_project_id" name="flt_project_id" required>
 						<option value="">--select--</option>

@@ -24,7 +24,8 @@ class RevenueController extends Controller
   public function index()
   {
 	 $projs=(new Project())->getProjects();
-	 return view('admin.revenue.revenue',compact('projs'));
+	 $staff=(new Staff())->getStaffs();
+	 return view('admin.revenue.revenue',compact('projs','staff'));
   }	
   
    	

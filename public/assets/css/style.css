@@ -9926,7 +9926,7 @@ svg.pulse-svg {
   display: flex;
   align-items: center; }
   .header-left .dashboard_bar {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600;
     color: #000; }
     @media only screen and (max-width: 1400px) {
@@ -10166,8 +10166,8 @@ svg.pulse-svg {
     .header-right .header-profile .dropdown-menu a:hover, .header-right .header-profile .dropdown-menu a:focus, .header-right .header-profile .dropdown-menu a.active {
       color: #6CC51D; }
   .header-right .header-profile img {
-    width: 57px;
-    height: 57px;
+    width: 45px;
+    height: 45px;
     border-radius: 0.875rem; }
     @media only screen and (max-width: 1400px) {
       .header-right .header-profile img {

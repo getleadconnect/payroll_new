@@ -133,14 +133,29 @@ public function viewRevenues($request)  //view data
                         ->orWhere("revenue.voucher_no", 'like', '%' .$search . '%')
                         ->orWhere("revenue.voucher_date", 'like', '%' .$search . '%')
 						->orWhere("revenue.entry_date", 'like', '%' .$search . '%');
-			  })->orderBy('revenue.id','DESC')->get();
+			  });
+			  
+		if($request->projectId!="" and $request->staffId!="")
+			{
+				$dats->where('revenue.project_id',$request->projectId)->where('revenue.staff_id',$request->staffId);
+			}
+		elseif($request->projectId!="")
+			{
+				$dats->where('revenue.project_id',$request->projectId);
+			}
+		elseif($request->staffId!="")
+			{
+				$dats->where('revenue.staff_id',$request->staffId);
+			}
+
+		$datas=$dats->orderBy('revenue.id','DESC')->get();
 
 		$data = array();
 		$uData = array();
 		
-        if(!empty($dats))
+        if(!empty($datas))
         {
-			foreach ($dats as $key=>$r)
+			foreach ($datas as $key=>$r)
             {
 
 					$uData['id'] = ++$key;

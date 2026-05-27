@@ -54,7 +54,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 				<!--<div class="d-flex py-3 border-bottom align-items-center"> -->
 				<div class="row mt-1 pt-2 pb-2 filter-box">
 				
-					<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label">Project </label>
+					<label class="col-lg-1 col-xl-1 col-xxl-1 col-form-label text-right">Project </label>
 					<div class="col-lg-3 col-xl-3 col-xxl-3">
 					<select class="form-control" id="flt_project_id" name="flt_project_id" required>
 					<option value="">--select--</option>

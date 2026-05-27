@@ -40,7 +40,7 @@
 			<form method="POST" action="misc-non-gst-office-payment">
 			  @csrf
 				<div class="row mt-3 p-2 filter-box" >
-				  <label class="col-xl-1 col-xxl-1 col-lg-1 col-form-label" >Project</label>
+				  <label class="col-xl-1 col-xxl-1 col-lg-1 col-form-label text-right" >Project</label>
 				  <div class="col-xl-3 col-xxl-3 col-lg-3">
 					   <select class="form-control form-control-lg" id="flt_project_id" name="flt_project_id" required>
 					   <option value="">--select--</option>
@@ -50,7 +50,7 @@
 				    </select>
 				</div>
 				
-				<label class="col-xl-1 col-xxl-1 col-lg-1 col-form-label" >Date</label>
+				<label class="col-xl-1 col-xxl-1 col-lg-1 col-form-label text-right" >Date</label>
 				@if(Session::get('admin_role_id')==1)
 				<div class="col-xl-2 col-xxl-2 col-lg-2">
 					<input type="date" class="form-control" id="flt_start_date"  name="flt_start_date"  value="{{$sdate}}" required>
