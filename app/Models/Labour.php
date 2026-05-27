@@ -208,7 +208,7 @@ public function viewLabours($request)  //view data
 
 	public function getStates()
 	{
-		$data=self::select('labours.state')->groupBy('state')->orderBy('id','ASC')->get();
+		$data=self::select('labours.state')->groupBy('state')->orderBy('state','ASC')->get();
 		return $data;
 	}
 
