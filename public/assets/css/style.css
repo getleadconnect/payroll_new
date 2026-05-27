@@ -676,6 +676,7 @@ pre {
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
+    
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -1187,7 +1188,9 @@ pre {
     margin-left: 83.3333333333%; }
 
   .offset-md-11 {
-    margin-left: 91.6666666667%; } }
+    margin-left: 91.6666666667%; } 
+   
+  }
 @media (min-width: 992px) {
   .col-lg {
     flex-basis: 0;
@@ -1890,6 +1893,17 @@ pre {
     .table-responsive-sm > .table-bordered {
       border: 0; } }
 @media (max-width: 767.98px) {
+  
+ .nav-header
+  {
+      background:#fff !important;
+    }
+    
+  .btn-secondary, .btn-info
+  {
+    margin-top:5px;
+  }
+
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -12318,7 +12332,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             padding-left: 3.5rem; } }
         .deznav .metismenu ul a:hover, .deznav .metismenu ul a:focus, .deznav .metismenu ul a.mm-active {
           text-decoration: none;
-          color: #3695eb; }
+          color: #fff; }
     .deznav .metismenu a {
       position: relative;
       display: block;
@@ -12600,7 +12614,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     padding-right: 0;
     justify-content: center; }
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .nav-control .hamburger .line {
-    background-color: #6CC51D !important; }
+    background-color: #143b64 !important; }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .copyright,
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .drum-box {
   display: none; }
@@ -12642,7 +12656,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       border-radius: 6px;
       margin-left: 0;
       border: 0;
-      background: #fff; }
+      background: #9094bc; }
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu li > ul:after {
         content: "";
         position: absolute;
@@ -12677,7 +12691,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li > a i {
         padding: 0; }
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li.mm-active > a {
-      background: #6CC51D;
+      background: #8f99fb91;
       border-radius: 0.875rem;
       color: #fff; }
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li.mm-active > a i {
@@ -12688,7 +12702,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       top: auto; }
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li:hover > a {
       border-radius: 0.875rem;
-      background: #6CC51D;
+      background: #8f99fb91;
       color: #fff; }
       [data-theme-version="dark"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .deznav .metismenu > li:hover > a {
         background: #1e2746;}
