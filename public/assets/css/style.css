@@ -12332,7 +12332,9 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             padding-left: 3.5rem; } }
         .deznav .metismenu ul a:hover, .deznav .metismenu ul a:focus, .deznav .metismenu ul a.mm-active {
           text-decoration: none;
-          color: #fff; }
+          /*color: #fff;*/
+        color:#37d1bf;
+        }
     .deznav .metismenu a {
       position: relative;
       display: block;

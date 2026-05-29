@@ -47,6 +47,15 @@ table tr,th,td
 				<style>
 				@page { size: portrait; }
 				table td{font-size:12px;}
+
+				table tr,th,td
+				{
+					height:30px;
+					border:1px solid #e4e4e4;
+					padding-left:10px;
+				}
+
+
 				</style>
 
 				<p >
@@ -62,7 +71,7 @@ table tr,th,td
 				<br>
 				<br>
 				
-				   <table  style="width:100%;">
+				   <table  cellpadding=0 cellspacing=0 style="width:100%;">
 							<thead>
 								<tr>
 									<th>No</th>

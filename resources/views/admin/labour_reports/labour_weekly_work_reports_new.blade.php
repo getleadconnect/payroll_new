@@ -33,27 +33,6 @@ table.dataTable thead th, table.dataTable tfoot th {
 }
 
 
-
-.tbl
-{
-	border-collapse: collapse;
-	border:1px solid #000;
-}
-.col-tr th
-{
-	border-collapse: collapse;
-	border-right:1px solid #000;
-	border-bottom:1px solid #000;
-}
-.col-tr td
-{
-	border-collapse: collapse;
-	border-right:1px solid #000;
-	border-bottom:1px solid #000;
-	padding-left:10px;
-	padding-right:5px;
-}
-
 </style>
 
 
@@ -132,8 +111,32 @@ table.dataTable thead th, table.dataTable tfoot th {
 				<div class="table-responsive">
 
 				<div id="printArea">
+
+
+				<style>
+
+				.tbl
+				{
+					border-collapse: collapse;
+					border:1px solid #000;
+				}
+				.col-tr th
+				{
+					border-collapse: collapse;
+					border-right:1px solid #000;
+					border-bottom:1px solid #000;
+				}
+				.col-tr td
+				{
+					border-collapse: collapse;
+					border-right:1px solid #000;
+					border-bottom:1px solid #000;
+					padding-left:10px;
+					padding-right:5px;
+				}
+				</style>
 											
-				<table border=0 cellpadding=0 cellspacing=0 id="tb-list" style="width:100%;font-weight:500;font-size:12px;">
+				<table border=0 cellpadding=0 cellspacing=0  style="width:100%;font-weight:500;font-size:12px;">
 				<tr>				
 				<th colspan=4 class="text-center fs-20">{{strtoupper($pr->project_name??"")}}</th>
 				</tr>
@@ -191,7 +194,7 @@ table.dataTable thead th, table.dataTable tfoot th {
 				@endif
 				</tbody>
 				</table>
-				<table id="tb-list" class="tbl" border=0  cellpadding=0 cellspacing=0 style="width:100%;font-weight:500;font-size:12px;">
+				<table id="tb-list" class="tbl" border=0  cellpadding=0 cellspacing=0 style="width:100%;font-weight:500;font-size:12px;border-top:none !important;">
 				<tr class="col-tr">
 					<th style="text-align:right;">Total Net Pay: &nbsp;</th>
 					<th style="width:200px;font-size:16px;text-align:right;">{{$data[0]['netpay']??0}}</th>

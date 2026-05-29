@@ -4,7 +4,7 @@
 	{
 		height:35px;
 		padding-left:15px;
-		border:1px solid #e4e4e4;
+		border:1px solid #e4e4e4 ;
 	}
 	</style>
 		
@@ -23,7 +23,7 @@
 	<label style="margin-top:15px;font-weight:600;" class="text-right" ><u>Labour Details</u></label>
 	<br>
 	
-	<table class="view-table" style="width:95%;margin-top:15px;" >
+	<table border=0 cellpadding=0 cellspacing=0  class="view-table" style="width:95%;margin-top:15px;" >
 	<tr><td class="td-width">Code</td><td id="business">{{$ldt->code}}</td></tr>
 	<tr><td class="td-width">Name</td><td id="service"><b>{{$ldt->name}}</b></td></tr>
 	<tr><td class="td-width">Address</td><td id="keywords">{{$ldt->address}}</td></tr>
